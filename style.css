@@ -1,7 +1,12 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr, 1fr, 1fr, 1fr);
+  grid-template-rows: repeat(5, 1fr, 1fr, 1fr, 1fr);
+  grid-template-areas:
+    "button1 button2 button3 button4"
+    "button5 button6 button7 button8"
+    "button9 button10 button11 button12"
+    "button13 button14 button16 button15";
   gap: 5px;
 }
 
@@ -12,6 +17,7 @@
   font-size: 200%;
   border: 1px solid #ccc;
   cursor: pointer;
+  grid-area: button;
 }
 
 #number {
@@ -19,4 +25,68 @@
   padding: 8px;
   height: 20px;
   border: 1px solid #ccc;
+}
+
+#buttonValue1 {
+  grid-area: button1;
+}
+
+#buttonValue2 {
+  grid-area: button2;
+}
+
+#buttonValue3 {
+  grid-area: button3;
+}
+
+#buttonValue4 {
+  grid-area: button4;
+}
+
+#buttonValue5 {
+  grid-area: button5;
+}
+
+#buttonValue6 {
+  grid-area: button6;
+}
+
+#buttonValue7 {
+  grid-area: button7;
+}
+
+#buttonValue8 {
+  grid-area: button8;
+}
+
+#buttonValue9 {
+  grid-area: button9;
+}
+
+#buttonValue10 {
+  grid-area: button10;
+}
+
+#buttonValue11 {
+  grid-area: button11;
+}
+
+#buttonValue12 {
+  grid-area: button12;
+}
+
+#buttonValue13 {
+  grid-area: button13;
+}
+
+#buttonValue14 {
+  grid-area: button14;
+}
+
+#buttonValue15 {
+  grid-area: button15;
+}
+
+#buttonValue16 {
+  grid-area: button16;
 }
